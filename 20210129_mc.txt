@@ -1,0 +1,25 @@
+﻿/*Задача 8.Напишете прототипите на разгледаните досега функции int
+add(int a, int b) и int incr(int c) във файла f.h, a телата на функциите във
+файла f.c. и използвайте тези функции във файла m.c, където е разписано
+тялото на функцията main() . Компилирайте програмата по показания погоре начин.*/
+#include<stdio.h>
+#include"f.h"
+int main(){
+    int a,b,c;
+    int result1,result2;
+     printf("Please enter any value of side a:");
+        scanf("%d",&a);
+
+        printf("Please enter any value of side b:");
+        scanf("%d",&b);
+
+        printf("Please enter any value of side b:");
+        scanf("%d",&c);
+
+         result1=add(a,b);
+         result2=incr(c);
+
+        printf("The result of add() is: %d\n",result1);
+        printf("The result of incr() is: %d\n",result2);
+    return 0;
+}
